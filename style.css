@@ -9,35 +9,34 @@ body {
 }
 
 /* Navigation Bar */
+
 nav {
   background-color: #6eaa6b;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: flex-end;
-  text-align: center;
-  height: 40px;
 }
 
-div {
-  display: block;
+ul.link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ul.link li {
+  margin-right: 20px;
+}
+
+ul.link li a {
+  text-decoration: none;
   color: white;
   padding: 10px 16px;
-  text-decoration: none;
-  transition: background-color 0.3s; /* Add transition for smooth effect */
+  display: block;
 }
 
-div:hover {
+ul.link li a:hover {
   background-color: #ddd;
   color: black;
 }
 
-main {
-  padding: 20px;
-}
-
-h1,
-p {
-  color: #333;
-}
 /* ///////////////////////////// */
