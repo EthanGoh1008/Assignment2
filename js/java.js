@@ -1,3 +1,13 @@
+function redirectToQuizPage() {
+  // Redirect to the quiz.html page
+  window.location.href = "quiz.html";
+}
+
+function redirectToLeaderboard() {
+  // Redirect to the quiz.html page
+  window.location.href = "leaderboard.html";
+}
+
 const apiKey = "65acb249a61208cea90d24c4";
 const apiUrl = "https://leaderboard-0e71.restdb.io/rest/entries";
 
