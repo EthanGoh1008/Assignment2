@@ -15,7 +15,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: flex-end;
-  text-align: right;
+  text-align: center;
   height: 40px;
 }
 
@@ -36,8 +36,8 @@ main {
   padding: 20px;
 }
 
-h1, p {
+h1,
+p {
   color: #333;
 }
 /* ///////////////////////////// */
-
