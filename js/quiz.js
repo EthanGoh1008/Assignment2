@@ -5,6 +5,8 @@ const exit_btn = info_box.querySelector(".buttons .quit");
 const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 
+const option_list = document.querySelector(".option_list");
+
 //If start Quiz Button Cliicked
 start_btn.onclick = () => {
   info_box.classList.add("activeInfo"); //show the info box
@@ -20,23 +22,35 @@ continue_btn.onclick = () => {
   info_box.classList.remove("activeInfo"); //hide the info box
   quiz_box.classList.add("activeQuiz"); //Show the quiz box
   showQuestions(0);
+  queCounter(1);
 };
 
 let que_count = 0;
+let que_numb = 1;
 
 const next_btn = quiz_box.querySelector(".next_btn");
 
 //If Next Button is Clicked
 next_btn.onclick = () => {
-  que_count++;
-  showQuestions(que_count);
+  if (que_count < questions.length - 1) {
+    que_count++;
+    que_numb++;
+    showQuestions(que_count);
+    queCounter(que_numb);
+  } else {
+    console.log("Questions completed");
+  }
 };
 
 //getting questions and options for array
 function showQuestions(index) {
   const que_text = document.querySelector(".que_text");
-  const option_list = document.querySelector(".option_list");
-  let que_tag = "<span>" + questions[index].question + "</span>";
+  let que_tag =
+    "<span>" +
+    questions[index].numb +
+    ". " +
+    questions[index].question +
+    "</span>";
   let option_tag =
     '<div class="option">' +
     questions[index].options[0] +
@@ -52,4 +66,46 @@ function showQuestions(index) {
     "<span></span></div>";
   que_text.innerHTML = que_tag;
   option_list.innerHTML = option_tag;
+  const option = option_list.querySelectorAll(".option");
+  for (let i = 0; i < option.length; i++) {
+    option[i].setAttribute("onclick", "optionSelected(this)");
+  }
+}
+
+//tick btn tbc
+
+function optionSelected(answer) {
+  let userAns = answer.textContent;
+  let correctAns = questions[que_count].answer;
+  let allOptions = option_list.children.length;
+  if (userAns == correctAns) {
+    answer.classList.add("correct");
+    console.log("Answer is Correct");
+  } else {
+    answer.classList.add("incorrect");
+    console.log("Answer is Wrong");
+
+    //if answers is incorrect the automatically select the correct answer
+    for (let i = 0; i < allOptions; i++) {
+      if (option_list.children[i].textContent == correctAns) {
+        option_list.children[i].setAttribute("class", "option correct");
+      }
+    }
+  }
+
+  //once user selectes option, disable all options
+  for (let i = 0; i < allOptions; i++) {
+    option_list.children[i].classList.add("disabled");
+  }
+}
+
+function queCounter(index) {
+  const bottom_ques_counter = quiz_box.querySelector(".total_que");
+  let totalQuesCountTag =
+    "<span><p>" +
+    index +
+    "</p>of<p>" +
+    questions.length +
+    "</p>Questions</span>";
+  bottom_ques_counter.innerHTML = totalQuesCountTag;
 }
