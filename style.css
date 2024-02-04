@@ -2,15 +2,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  display: grid;
   min-height: 200vh;
 }
 
 /* Navigation Bar */
-
-nav {
-  background-color: #6eaa6b;
-}
 
 .header {
   min-height: 100vh;
@@ -79,10 +74,93 @@ nav {
 }
 
 .content p {
-  color: black;
   font-size: 13px;
   font-weight: 300;
   line-height: 22px;
   padding: 10px;
 }
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-col {
+  flex-basis: 30%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.content-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+h3 {
+  text-align: center;
+}
+
+@media(max-width: 700px){
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Range */
+
+.range {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.range-col {
+  flex-basis: 32%;
+  margin-bottom: 30px;
+  margin-left: 580px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.range-col img {
+  display: block;
+  max-width: none; /* Remove max-width constraint */
+  height: auto; /* Maintain the image's aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+  width: 100%; /* Make the image 100% of its container's width */
+}
+
+/* Notes */
+.notes {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.notes-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.notes-col img {
+
+}
+
+/* Footer */
+
 /* ///////////////////////////// */
