@@ -11,7 +11,8 @@ body {
   min-height: 100vh;
   width: 100%;
   /* Check the path and file extension below */
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('Images/frontpage.jpg');
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("Images/frontpage.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -55,8 +56,8 @@ body {
   transition: 1%;
 }
 
-@media(max-width: 700px){
-  .text-box h1{
+@media (max-width: 700px) {
+  .text-box h1 {
     font-size: 62px;
   }
 }
@@ -98,14 +99,14 @@ body {
 }
 
 .content-col:hover {
-  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
   text-align: center;
 }
 
-@media(max-width: 700px){
+@media (max-width: 700px) {
   .row {
     flex-direction: column;
   }
@@ -150,22 +151,23 @@ h3 {
   flex-basis: 44%;
   border-radius: 10px;
   margin-bottom: 5%;
-  text-align: left;
+  text-align: center;
   background: #fff3f3;
   padding: 25px;
   cursor: pointer;
   display: flex;
 }
 
-.notes-col img {
-
+.notes-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* cta */
 .foot {
   margin: 100px auto;
   width: 80%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Images/dude.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("Images/dude.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -199,13 +201,38 @@ h3 {
   padding: 18px 0;
 }
 
+/* Equipment */
+.space {
+  margin-top: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+
+#feature .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 20px;
+  box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+#feature .fe-box:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Leaderboard */
 .table {
   border-collapse: collapse;
   width: 100%;
 }
 
-.th, td {
+.th,
+td {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
@@ -214,4 +241,4 @@ h3 {
 .th {
   background-color: #f2f2f2;
 }
-/* ///////////////////////////// */
+/* End */
