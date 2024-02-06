@@ -42,6 +42,7 @@ body {
   border-radius: 5px;
   background: #fff;
   cursor: pointer;
+  display: none;
 }
 
 .info_box {

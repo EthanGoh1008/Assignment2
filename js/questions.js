@@ -57,43 +57,47 @@ let questions = [
   },
 ];*/
 
-let questions = []; // Define questions globally
+function Quizfetch() {
+  const clickedQuestion = localStorage.getItem("clickedQuestion");
 
-const apiEndpoint =
-  'https://airriflequiz-c324.restdb.io/rest/thequiz?q={"quizname":"test"}&sort=questionnumber';
-const apiKey = "65bf879d7627eca1ac31a764";
+  const apiEndpoint =
+    'https://airriflequiz-c324.restdb.io/rest/thequiz?q={"quizname":"' +
+    clickedQuestion +
+    '"}&sort=questionnumber';
+  const apiKey = "65bf879d7627eca1ac31a764";
 
-// Using fetch to get data from the API with headers
-fetch(apiEndpoint, {
-  method: "GET",
-  headers: {
-    "Content-Type": "application/json",
-    "x-apikey": apiKey,
-  },
-})
-  .then((response) => response.json())
-  .then((data) => {
-    // Iterate through each record in the API response
-    data.forEach((questionRecord) => {
-      // Assuming the API response structure is an object with fields numb, question, answer, and options
-      let questionData = {
-        numb: questionRecord.questionnumber,
-        question: questionRecord.question,
-        answer: questionRecord.answer,
-        options: questionRecord.options.split(";"),
-      };
-
-      // Push the question data to the array
-      questions.push(questionData);
-    });
-
-    // Now 'questions' array is populated with data from the API
-    console.log(questions);
-
-    // Store questions into local storage
-    const questionsJson = JSON.stringify(questions);
-    localStorage.setItem("quizQuestions", questionsJson);
-
-    console.log("Questions stored in local storage.");
+  // Using fetch to get data from the API with headers
+  fetch(apiEndpoint, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      "x-apikey": apiKey,
+    },
   })
-  .catch((error) => console.error("Error fetching data from API:", error));
+    .then((response) => response.json())
+    .then((data) => {
+      // Iterate through each record in the API response
+      data.forEach((questionRecord) => {
+        // Assuming the API response structure is an object with fields numb, question, answer, and options
+        let questionData = {
+          numb: questionRecord.questionnumber,
+          question: questionRecord.question,
+          answer: questionRecord.answer,
+          options: questionRecord.options.split(";"),
+        };
+
+        // Push the question data to the array
+        questions.push(questionData);
+      });
+
+      // Now 'questions' array is populated with data from the API
+      console.log(questions);
+
+      // Store questions into local storage
+      const questionsJson = JSON.stringify(questions);
+      localStorage.setItem("quizQuestions", questionsJson);
+
+      console.log("Questions stored in local storage.");
+    })
+    .catch((error) => console.error("Error fetching data from API:", error));
+}

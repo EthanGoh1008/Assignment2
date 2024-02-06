@@ -10,7 +10,31 @@ const timeOff = quiz_box.querySelector("header .time_text");
 
 const option_list = document.querySelector(".option_list");
 
-//If start Quiz Button Cliicked
+let questions = []; // Define questions globally
+
+// When an Image is clicked
+function showStartButton(clickedImage) {
+  var startBtnDiv = document.querySelector(".start_btn button");
+  var images = document.querySelectorAll(".questionoptions img");
+
+  startBtnDiv.style.display = "block";
+
+  // Hide all images
+  images.forEach(function (image) {
+    image.style.display = "none";
+  });
+
+  // Log the question that was clicked
+  var clickedQuestion = clickedImage.getAttribute("alt");
+  console.log("Clicked Question: " + clickedQuestion);
+
+  // Store clicked question in local storage
+  localStorage.setItem("clickedQuestion", clickedQuestion);
+
+  Quizfetch();
+}
+
+//If start Quiz Button Clicked
 start_btn.onclick = () => {
   info_box.classList.add("activeInfo"); //show the info box
 };
@@ -20,7 +44,7 @@ exit_btn.onclick = () => {
   info_box.classList.remove("activeInfo"); //hide the info box
 };
 
-//If Continue Button Cliicked
+//If Continue Button Clicked
 continue_btn.onclick = () => {
   info_box.classList.remove("activeInfo"); //hide the info box
   quiz_box.classList.add("activeQuiz"); //Show the quiz box
