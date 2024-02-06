@@ -202,6 +202,10 @@ h3 {
 }
 
 /* Equipment */
+
+h1 {
+  margin-left: 20px;
+}
 .space {
   margin-top: 80px;
   display: flex;
@@ -224,7 +228,61 @@ h3 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
+.product {
+  text-align: center;
+}
 
+.product h2 p {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product .pro {
+  width: 23px;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+}
+
+.product .pro:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.product .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.product .pro.des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.proudct .pro .des h5 {
+  padding-top: 7px;
+  color: #6eaa6b;
+  font-size: 14px;
+}
+
+.product .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #6eaa6b;
+}
+
+.product .pro .des i {
+  font-size: 12px;
+}
+
+.product .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+}
 /* Leaderboard */
 .table {
   border-collapse: collapse;
