@@ -42,6 +42,8 @@ function displayData(data) {
   // Clear existing content
   leaderboardTable.innerHTML = "";
 
+  data.sort((a, b) => b.score - a.score);
+
   // Create and append table rows and cells for each entry
   data.forEach((entry) => {
     const row = leaderboardTable.insertRow();

@@ -11,7 +11,8 @@ body {
   min-height: 100vh;
   width: 100%;
   /* Check the path and file extension below */
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('Images/frontpage.jpg');
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("Images/frontpage.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -55,8 +56,8 @@ body {
   transition: 1%;
 }
 
-@media(max-width: 700px){
-  .text-box h1{
+@media (max-width: 700px) {
+  .text-box h1 {
     font-size: 62px;
   }
 }
@@ -98,14 +99,14 @@ body {
 }
 
 .content-col:hover {
-  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
   text-align: center;
 }
 
-@media(max-width: 700px){
+@media (max-width: 700px) {
   .row {
     flex-direction: column;
   }
@@ -158,14 +159,14 @@ h3 {
 }
 
 .notes-col img {
-
 }
 
 /* cta */
 .foot {
   margin: 100px auto;
   width: 80%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Images/dude.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("Images/dude.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -199,19 +200,29 @@ h3 {
   padding: 18px 0;
 }
 
-/* Leaderboard */
-.table {
-  border-collapse: collapse;
+/*LeaderBoard*/
+#leaderboard-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.th, td {
-  border: 1px solid #dddddd;
+th,
+td {
+  padding: 10px;
   text-align: left;
-  padding: 8px;
+  border: 1px solid #ddd;
 }
 
-.th {
+th {
   background-color: #f2f2f2;
 }
-/* ///////////////////////////// */
+
+tr:hover {
+  background-color: #f5f5f5;
+}
