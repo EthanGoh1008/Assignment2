@@ -230,34 +230,36 @@ h3 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-#product .section-p1 h2 p {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin-top: 20px;
+#product {
+  text-align: center;
 }
 
-#product .pro-col {
+#product .pro-container {
   display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
+  justify-content: space-between; /* Center the .pro elements within the section */
+  flex-wrap: wrap;
+  margin: 0 -10px;
 }
 
 #product .pro {
-  width: 23px;
+  width: 32px;
   min-width: 250px;
   padding: 10px 12px;
   border: 1px solid #cce7d0;
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-  margin: 15px 0;
+  margin: 10px;
   transition: 0.2 ease;
+  text-align: left;
   position: relative;
+  width: calc(25% - 20px); /* Adjust width for 4 items per row with 20px spacing between them */
+  margin: 15px 10px; /* Add spacing between .pro elements */
+  box-sizing: border-box;
 }
 
 #product .pro:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
 #product .pro img {
@@ -266,11 +268,11 @@ h3 {
 }
 
 #product .pro.des {
-  text-align: start;
+  text-align: left;
   padding: 10px 0;
 }
 
-#proudct .pro .des h5 {
+#product .pro .des h5 {
   padding-top: 7px;
   color: #6eaa6b;
   font-size: 14px;
