@@ -91,8 +91,13 @@ restart_quiz.onclick = () => {
 };
 
 quit_quiz.onclick = () => {
-  window.location.reload();
+  redirectToLeaderboard();
 };
+
+// Function to redirect to the leaderboard page
+function redirectToLeaderboard() {
+  window.location.href = "leaderboard.html";
+}
 
 //If Next Button is Clicked
 next_btn.onclick = () => {
