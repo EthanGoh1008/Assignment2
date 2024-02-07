@@ -74,6 +74,21 @@
       </div>
     </nav>
 
+    <button class="btn btn-primary" onclick="showAddEntryForm()">
+      Add Score and Name
+    </button>
+
+    <div id="addEntryFormContainer" style="display: none">
+      <h2>Add Score and Name</h2>
+      <form id="addEntryForm">
+        <label for="score">Score:</label>
+        <input type="number" id="score" required />
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+        <button type="submit" class="btn btn-primary">Add Entry</button>
+      </form>
+    </div>
+
     <h1>Leaderboard</h1>
     <div id="leaderboard-container">
       <table>
