@@ -5,6 +5,10 @@ body {
   min-height: 200vh;
 }
 
+.section-p1 {
+  margin: 40px 80px;
+}
+
 /* Navigation Bar */
 
 .header {
@@ -151,7 +155,7 @@ h3 {
   flex-basis: 44%;
   border-radius: 10px;
   margin-bottom: 5%;
-  text-align: left;
+  text-align: center;
   background: #fff3f3;
   padding: 25px;
   cursor: pointer;
@@ -200,12 +204,6 @@ h3 {
   padding: 18px 0;
 }
 
-/*LeaderBoard*/
-#leaderboard-container {
-  max-width: 600px;
-  margin: 20px auto;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
@@ -221,8 +219,4 @@ td {
 
 th {
   background-color: #f2f2f2;
-}
-
-tr:hover {
-  background-color: #f5f5f5;
 }
