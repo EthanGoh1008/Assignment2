@@ -5,6 +5,10 @@ body {
   min-height: 200vh;
 }
 
+.section-p1 {
+  margin: 40px 80px;
+}
+
 /* Navigation Bar */
 
 .header {
@@ -203,9 +207,6 @@ h3 {
 
 /* Equipment */
 
-h1 {
-  margin-left: 20px;
-}
 .space {
   margin-top: 80px;
   display: flex;
@@ -222,67 +223,82 @@ h1 {
   border: 1px solid #cce7d0;
   border-radius: 10px;
   margin: 15px;
+  transition: 0.2 ease;
 }
 
 #feature .fe-box:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.product {
-  text-align: center;
-}
-
-.product h2 p {
+#product .section-p1 h2 p {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   margin-top: 20px;
 }
 
-.product .pro {
+#product .pro-col {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+#product .pro {
   width: 23px;
   min-width: 250px;
   padding: 10px 12px;
   border: 1px solid #cce7d0;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  transition: 0.2 ease;
+  position: relative;
 }
 
-.product .pro:hover {
+#product .pro:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-.product .pro img {
+#product .pro img {
   width: 100%;
   border-radius: 20px;
 }
 
-.product .pro.des {
+#product .pro.des {
   text-align: start;
   padding: 10px 0;
 }
 
-.proudct .pro .des h5 {
+#proudct .pro .des h5 {
   padding-top: 7px;
   color: #6eaa6b;
   font-size: 14px;
 }
 
-.product .pro .des h4 {
+#product .pro .des h4 {
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
   color: #6eaa6b;
 }
 
-.product .pro .des i {
+#product .pro .des i {
   font-size: 12px;
 }
 
-.product .pro .cart {
+#product .pro .cart {
   width: 40px;
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
+  background-color: #cce7d0;
+  font-weight: 500;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
 }
+
 /* Leaderboard */
 .table {
   border-collapse: collapse;
