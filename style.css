@@ -2,19 +2,19 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  min-height: 200vh;
+  min-height: 100vh;
 }
 
 .section-p1 {
   margin: 40px 80px;
 }
 
+/* Main Page */
 /* Navigation Bar */
 
 .header {
   min-height: 100vh;
   width: 100%;
-  /* Check the path and file extension below */
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url("Images/frontpage.jpg");
   background-position: center;
@@ -151,6 +151,34 @@ h3 {
   text-align: center;
 }
 
+.notes h1 {
+  margin-bottom: 20px;
+}
+
+.notes p {
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+.notes .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add equal space between .notes-col divs */
+}
+
+.notes-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add equal space between text and image */
+}
+
+
 .notes-col {
   flex-basis: 44%;
   border-radius: 10px;
@@ -160,11 +188,17 @@ h3 {
   padding: 25px;
   cursor: pointer;
   display: flex;
+  flex-direction: column; /* Ensure text is stacked vertically */
+}
+
+.notes-col img {
+  max-width: 100%; /* Ensure images don't exceed container width */
 }
 
 .notes-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
+
 
 /* cta */
 .foot {
@@ -205,6 +239,7 @@ h3 {
   padding: 18px 0;
 }
 
+
 /* Equipment */
 
 .space {
@@ -213,8 +248,6 @@ h3 {
   align-items: flex-start;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-=======
 }
 
 #feature .fe-box {
@@ -304,13 +337,6 @@ h3 {
   right: 10px;
 }
 
-/*LeaderBoard*/
-#leaderboard-container {
-  max-width: 600px;
-  margin: 20px auto;
->>>>>>> 75fd2e527b80300a4a03cbb2b8fb8569d998b684
-}
-
 #feature .fe-box {
   width: 180px;
   text-align: center;
@@ -397,20 +423,30 @@ h3 {
   right: 10px;
 }
 
-/* Leaderboard */
-.table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.th,
-td {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-.th {
-  background-color: #f2f2f2;
+/*LeaderBoard*/ 
+#leaderboard-container { 
+  max-width: 600px; 
+  margin: 20px auto; 
+} 
+ 
+.table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-top: 20px; 
+} 
+ 
+.th, 
+td { 
+  padding: 10px; 
+  text-align: left; 
+  border: 1px solid #ddd; 
+} 
+ 
+.th { 
+  background-color: #f2f2f2; 
+} 
+ 
+.tr:hover { 
+  background-color: #f5f5f5; 
 }
 /* End */

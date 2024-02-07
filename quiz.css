@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -8,13 +9,74 @@
 
 body {
   background: #007bff;
+  height: 10vh;
+}
+
+.quiz-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .questionoptions {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
+
+.quiz-container {
+  position: relative;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.1); /* Lighter overlay color */
+  transition: opacity 0.3s ease;
+}
+
+.quiz-container:hover img {
+  transform: scale(1.05); /* Slightly smaller scale */
+}
+
+.quiz-container:hover .overlay {
+  opacity: 0.7; /* Lighter overlay opacity */
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Lighter box-shadow */
+}
+
+.quiz-container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-container img {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.quiz-caption {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+.quiz-container img {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.quiz-caption {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 
 .questionoptions img {
   width: 450px;
