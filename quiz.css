@@ -10,6 +10,28 @@ body {
   background: #007bff;
 }
 
+.questionoptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.questionoptions img {
+  width: 450px;
+  height: 300px;
+}
+
+.quiz-container {
+  text-align: center;
+}
+
+.quiz1,
+.quiz2,
+.quiz3 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
 .start_btn,
 .info_box,
 .quiz_box,

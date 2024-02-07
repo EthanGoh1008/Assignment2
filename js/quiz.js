@@ -16,12 +16,17 @@ let questions = []; // Define questions globally
 function showStartButton(clickedImage) {
   var startBtnDiv = document.querySelector(".start_btn button");
   var images = document.querySelectorAll(".questionoptions img");
+  var captions = document.querySelectorAll(".quiz-caption");
 
   startBtnDiv.style.display = "block";
 
-  // Hide all images
+  // Hide all images and captions
   images.forEach(function (image) {
     image.style.display = "none";
+  });
+
+  captions.forEach(function (caption) {
+    caption.style.display = "none";
   });
 
   // Log the question that was clicked
