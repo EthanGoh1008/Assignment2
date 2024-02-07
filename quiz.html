@@ -10,40 +10,105 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Shooting</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+              <a class="nav-link active" aria-current="page" href="quiz.html"
+                >Quiz</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="equipment.html">Equipment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="leaderboard.html">Leaderboard</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="leaderboard.html"
+                >Leaderboard</a
+              >
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
           </form>
         </div>
       </div>
     </nav>
+
+    <!--Quizes-->
+    <div class="questionoptions">
+      <div class="quiz-container">
+        <img
+          src="Images/safety.jpg"
+          class="quiz1"
+          alt="Safety Quiz"
+          onclick="showStartButton(this)"
+        />
+        <p class="quiz-caption">Safety Quiz</p>
+      </div>
+
+      <div class="quiz-container">
+        <img
+          src="Images/shootingtechniques.jpg"
+          class="quiz2"
+          alt="Shooting Quiz"
+          onclick="showStartButton(this)"
+        />
+        <p class="quiz-caption">Shooting Quiz</p>
+      </div>
+
+      <div class="quiz-container">
+        <img
+          src="Images/rules&regulations.jpg"
+          class="quiz3"
+          alt="Rules Quiz"
+          onclick="showStartButton(this)"
+        />
+        <p class="quiz-caption">Rules Quiz</p>
+      </div>
+    </div>
+
     <!--Start Quiz Button-->
-    <div class="start_btn"><button>Start Quiz</button></div>
+    <div class="start_btn"><button id="startButton">Start Quiz</button></div>
 
     <!--Info Box-->
     <div class="info_box">
@@ -81,6 +146,7 @@
           <div class="time_text">Time Left</div>
           <div class="timer_sec">15</div>
         </div>
+        <div class="time_line"></div>
       </header>
       <section>
         <div class="que_text">
@@ -89,11 +155,11 @@
         <div class="option_list">
           <!--<div class="option">
             <span>Hyper Text PreProcessor</span>
-            <div class="icon tick"></i><i class="fas fa-check"></i></div>
+            <div class="icon tick"><i class="fas fa-check"></i></div>
           </div>
           <div class="option">
             <span>Hyper Text Markup Language</span>
-            <div class="icon cross"></i><i class="fas fa-times"></i></div>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
           </div>
           <div class="option">
             <span>Hyper Text Multiple Language</span>
@@ -125,12 +191,7 @@
       </div>
       <div class="complete_text">You're completed the Quiz!</div>
       <div class="score_text">
-        <span
-          >and sorry, You got only
-          <p>2</p>
-          out of
-          <p>5</p></span
-        >
+        <!-- <span>and sorry, You got only <p>2</p> out of <p>5</p></span> -->
       </div>
       <div class="buttons">
         <button class="restart">Replay Quiz</button>

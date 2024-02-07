@@ -162,8 +162,7 @@ h3 {
   display: flex;
 }
 
-.notes-col:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+.notes-col img {
 }
 
 /* cta */
@@ -205,116 +204,19 @@ h3 {
   padding: 18px 0;
 }
 
-/* Equipment */
-
-.space {
-  margin-top: 80px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  align-items: center;
-}
-
-#feature .fe-box {
-  width: 180px;
-  text-align: center;
-  padding: 25px 20px;
-  box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.03);
-  border: 1px solid #cce7d0;
-  border-radius: 10px;
-  margin: 15px;
-  transition: 0.2 ease;
-}
-
-#feature .fe-box:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
-#product {
-  text-align: center;
-}
-
-#product .pro-container {
-  display: flex;
-  justify-content: space-between; /* Center the .pro elements within the section */
-  flex-wrap: wrap;
-  margin: 0 -10px;
-}
-
-#product .pro {
-  width: 32px;
-  min-width: 250px;
-  padding: 10px 12px;
-  border: 1px solid #cce7d0;
-  border-radius: 20px;
-  cursor: pointer;
-  margin: 10px;
-  transition: 0.2 ease;
-  text-align: left;
-  position: relative;
-  width: calc(25% - 20px); /* Adjust width for 4 items per row with 20px spacing between them */
-  margin: 15px 10px; /* Add spacing between .pro elements */
-  box-sizing: border-box;
-}
-
-#product .pro:hover {
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-#product .pro img {
+table {
   width: 100%;
-  border-radius: 20px;
-}
-
-#product .pro.des {
-  text-align: left;
-  padding: 10px 0;
-}
-
-#product .pro .des h5 {
-  padding-top: 7px;
-  color: #6eaa6b;
-  font-size: 14px;
-}
-
-#product .pro .des h4 {
-  padding-top: 7px;
-  font-size: 15px;
-  font-weight: 700;
-  color: #6eaa6b;
-}
-
-#product .pro .des i {
-  font-size: 12px;
-}
-
-#product .pro .cart {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50px;
-  background-color: #cce7d0;
-  font-weight: 500;
-  position: absolute;
-  bottom: 20px;
-  right: 10px;
-}
-
-/* Leaderboard */
-.table {
   border-collapse: collapse;
-  width: 100%;
+  margin-top: 20px;
 }
 
-.th,
+th,
 td {
-  border: 1px solid #dddddd;
+  padding: 10px;
   text-align: left;
-  padding: 8px;
+  border: 1px solid #ddd;
 }
 
-.th {
+th {
   background-color: #f2f2f2;
 }
-/* End */
