@@ -8,10 +8,15 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  border-radius: 20px;
+  background-color: ghostwhite;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 .4rem .8rem #0005;
+  overflow: hidden;
 }
 
-th,
-td {
+
+th {
   padding: 10px;
   text-align: left;
   border: 1px solid #ddd;
@@ -32,6 +37,22 @@ tr:hover {
   padding: 10px;
   border: 1px solid #ddd;
   background-color: #fff;
+  border-radius: 10px;
+}
+
+#addEntryFormContainer h2 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%; /* Make input fields full-width */
+  padding: 10px; /* Add padding to input fields */
+  margin-bottom: 20px; /* Add spacing between input fields */
+  border: 1px solid #ccc; /* Add border to input fields */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 button.btn.btn-primary {
@@ -41,5 +62,6 @@ button.btn.btn-primary {
 
 h1 {
   text-align: center;
+  margin-top: 80px;
   margin-top: 20px;
 }

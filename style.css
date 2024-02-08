@@ -42,6 +42,13 @@
   color: #fff;
 }
 
+/* Button hover color */
+button.btn.btn-outline-success:hover {
+  background-color: lightblue; /* Blue color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+
 .hero-btn {
   display: inline-block;
   text-decoration: none;
@@ -254,7 +261,7 @@ h3 {
   text-align: center;
   padding: 25px 20px;
   box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.03);
-  border: 1px solid #cce7d0;
+  border: 1px solid seashell;
   border-radius: 10px;
   margin: 15px;
   transition: 0.2 ease;
@@ -278,7 +285,7 @@ h3 {
   width: 32px;
   min-width: 250px;
   padding: 10px 12px;
-  border: 1px solid #cce7d0;
+  border: 1px solid #ddd;
   border-radius: 20px;
   cursor: pointer;
   margin: 10px;
@@ -298,7 +305,7 @@ h3 {
 }
 
 #product .pro img {
-  width: 100%;
+  width: 70%;
   border-radius: 20px;
 }
 
@@ -309,7 +316,7 @@ h3 {
 
 #product .pro .des h5 {
   padding-top: 7px;
-  color: #6eaa6b;
+  color: darkblue;
   font-size: 14px;
 }
 
@@ -317,7 +324,6 @@ h3 {
   padding-top: 7px;
   font-size: 15px;
   font-weight: 700;
-  color: #6eaa6b;
 }
 
 #product .pro .des i {
@@ -329,7 +335,7 @@ h3 {
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background-color: #cce7d0;
+  background-color: lightblue;
   font-weight: 500;
   position: absolute;
   bottom: 20px;
