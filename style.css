@@ -42,13 +42,6 @@
   color: #fff;
 }
 
-/* Button hover color */
-button.btn.btn-outline-success:hover {
-  background-color: lightblue; /* Blue color on hover */
-  color: #fff; /* Text color on hover */
-}
-
-
 .hero-btn {
   display: inline-block;
   text-decoration: none;
