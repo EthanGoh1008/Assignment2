@@ -8,8 +8,8 @@ function redirectToLeaderboard() {
   window.location.href = "leaderboard.html";
 }
 
-const apiKey = "65c4e6b101cd4deeeaba36d5";
-const apiUrl = "https://airrifleleaderboard-fccb.restdb.io/rest/entries";
+const apiKey = "65c497ef5eab38e8459cb88c";
+const apiUrl = "https://airrifleleaderboard-575c.restdb.io/rest/entries";
 
 // Function to fetch data and display it
 async function fetchData() {
