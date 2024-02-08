@@ -13,6 +13,7 @@ body {
 
 .quiz-header {
   text-align: center;
+  margin-top: 50px;
 }
 
 .quiz-header h2:first-child {
@@ -35,6 +36,11 @@ body {
   margin-bottom: 25px;
   margin-top: 20px;
   font-weight: 600;
+  display: block;
+}
+
+.footer p {
+  display: block;
 }
 
 .icon fa {
@@ -49,7 +55,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100;
 }
 
 .questionoptions {

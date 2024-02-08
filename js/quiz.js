@@ -18,6 +18,24 @@ function showStartButton(clickedImage) {
   var images = document.querySelectorAll(".questionoptions img");
   var captions = document.querySelectorAll(".quiz-caption");
 
+  // Hide footer section elements
+  var footerSection = document.querySelector(".footer");
+  if (footerSection) {
+    footerSection.style.display = "none";
+  }
+
+  // Hide .icon elements with the class .fa
+  var iconFaElements = document.querySelectorAll(".icons .fa");
+  iconFaElements.forEach(function (icon) {
+    icon.style.display = "none";
+  });
+
+  // Hide quiz-header section
+  var quizHeaderSection = document.querySelector(".quiz-header");
+  if (quizHeaderSection) {
+    quizHeaderSection.style.display = "none";
+  }
+
   startBtnDiv.style.display = "block";
 
   // Hide all images and captions
