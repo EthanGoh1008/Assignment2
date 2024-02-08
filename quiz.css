@@ -8,12 +8,93 @@
 
 body {
   background: #007bff;
+  height: 10vh;
+}
+
+.quiz-header {
+  text-align: center;
+}
+
+.quiz-header h2:first-child {
+  margin-top: 80px; /* Adjust the margin-top value as needed */
+}
+
+.quiz-header h2,
+.quiz-header p {
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icon fa {
+  color: #fff3f6;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.quiz-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .questionoptions {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.quiz-container {
+  position: relative;
+  margin: 10px 10px;
+  text-align: center;
+}
+
+.quiz-container:hover img {
+  transform: scale(1.05); /* Slightly smaller scale */
+}
+
+.quiz-container:hover .overlay {
+  opacity: 0.7; /* Lighter overlay opacity */
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Lighter box-shadow */
+}
+
+.quiz-container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-container img {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.quiz-caption {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.quiz-container img {
+  width: 200px; /* Adjust the width as needed */
+}
+
+.quiz-caption {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .questionoptions img {

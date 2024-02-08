@@ -1,20 +1,20 @@
-body {
+.body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  min-height: 200vh;
+  min-height: 100vh;
 }
 
 .section-p1 {
   margin: 40px 80px;
 }
 
+/* Main Page */
 /* Navigation Bar */
 
 .header {
   min-height: 100vh;
   width: 100%;
-  /* Check the path and file extension below */
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url("Images/frontpage.jpg");
   background-position: center;
@@ -151,6 +151,34 @@ h3 {
   text-align: center;
 }
 
+.notes h1 {
+  margin-bottom: 20px;
+}
+
+.notes p {
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+.notes .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add equal space between .notes-col divs */
+}
+
+.notes-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add equal space between text and image */
+}
+
+
 .notes-col {
   flex-basis: 44%;
   border-radius: 10px;
@@ -160,10 +188,17 @@ h3 {
   padding: 25px;
   cursor: pointer;
   display: flex;
+  flex-direction: column; /* Ensure text is stacked vertically */
 }
 
 .notes-col img {
+  max-width: 100%; /* Ensure images don't exceed container width */
 }
+
+.notes-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
 
 /* cta */
 .foot {
@@ -378,3 +413,5 @@ td {
 }
 
 /* End */
+=======
+
