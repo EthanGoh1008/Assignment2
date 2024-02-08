@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Air Rifle Safety Quiz</title>
     <link rel="stylesheet" href="quiz.css" />
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -49,6 +48,12 @@
               >
             </li>
             <li class="nav-item">
+              <a
+              class="nav-link active"
+              aria-current="page"
+              href="equipment.html"
+              >Equipment</a
+            >
             </li>
             <li class="nav-item">
               <a
@@ -74,38 +79,41 @@
       </div>
     </nav>
 
+    <section class="quiz-header">
+      <h2>Quiz</h2>
+      <p>Test your knowledge with these quizzes!</p>
+    </section>
+    
     <!--Quizes-->
-    <div class="questionoptions">
-      <div class="quiz-container">
-        <img
-          src="Images/safety.jpg"
-          class="quiz1"
-          alt="Safety Quiz"
-          onclick="showStartButton(this)"
-        />
-        <p class="quiz-caption">Safety Quiz</p>
+    <section class="quiz-section">
+      <div class="questionoptions">
+        <div class="quiz-container">
+          <div class="quiz-content">
+            <img src="Images/safety.jpg" class="quiz1" alt="Safety Quiz" onclick="showStartButton(this)" />
+            <p class="quiz-caption">Safety Quiz</p>
+          </div>
+          <div class="overlay"></div>
+        </div>
+    
+        <div class="quiz-container">
+          <div class="quiz-content">
+            <img src="Images/shootingtechniques.jpg" class="quiz2" alt="Shooting Quiz" onclick="showStartButton(this)" />
+            <p class="quiz-caption">Shooting Quiz</p>
+          </div>
+          <div class="overlay"></div>
+        </div>
+    
+        <div class="quiz-container">
+          <div class="quiz-content">
+            <img src="Images/rules&regulations.jpg" class="quiz3" alt="Rules Quiz" onclick="showStartButton(this)" />
+            <p class="quiz-caption">Rules Quiz</p>
+          </div>
+          <div class="overlay"></div>
+        </div>
       </div>
-
-      <div class="quiz-container">
-        <img
-          src="Images/shootingtechniques.jpg"
-          class="quiz2"
-          alt="Shooting Quiz"
-          onclick="showStartButton(this)"
-        />
-        <p class="quiz-caption">Shooting Quiz</p>
-      </div>
-
-      <div class="quiz-container">
-        <img
-          src="Images/rules&regulations.jpg"
-          class="quiz3"
-          alt="Rules Quiz"
-          onclick="showStartButton(this)"
-        />
-        <p class="quiz-caption">Rules Quiz</p>
-      </div>
-    </div>
+    </section>
+    
+    
 
     <!--Start Quiz Button-->
     <div class="start_btn"><button id="startButton">Start Quiz</button></div>
@@ -198,7 +206,16 @@
         <button class="quit">Quit Quiz</button>
       </div>
     </div>
-
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>For More Information, Find Us at Our Social Media Platform</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </section>
     <script src="js/quiz.js"></script>
     <script src="js/questions.js"></script>
   </body>
