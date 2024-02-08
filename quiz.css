@@ -12,6 +12,40 @@ body {
   height: 10vh;
 }
 
+.quiz-header {
+  text-align: center;
+}
+
+.quiz-header h2:first-child {
+  margin-top: 80px; /* Adjust the margin-top value as needed */
+}
+
+
+.quiz-header h2,
+.quiz-header p {
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icon fa {
+  color: #fff3f6;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
 .quiz-section {
   position: relative;
   display: flex;
@@ -27,7 +61,7 @@ body {
 
 .quiz-container {
   position: relative;
-  margin: 0 10px;
+  margin: 10px 10px;
   text-align: center;
 }
 
