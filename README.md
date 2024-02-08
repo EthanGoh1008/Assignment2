@@ -3,7 +3,7 @@
 This is Assignment 2.
 This group is with Jayden Toh Xuan Ming and Ethan.
 
-## Link for GitHub Live: https://ethangoh1008.github.io/Assignment2/equipment.html
+## Link for GitHub Live: https://ethangoh1008.github.io/Assignment2/
 
 ## Idea
 Our idea for this website is Air Rifle Shooting. We made this website for new-comers and begginers to learn more about Air Rifle. Our home page gives users a glimpse of what air rifle is while allowing them to learn some basic facts about air rifle.
@@ -32,5 +32,5 @@ https://keesafety.sg/media/jhzn3tyu/h-s-campaign-at-workplace.jpg?mode=max&width
 
 https://media.licdn.com/dms/image/C5612AQGLDwiZ3V6vbw/article-cover_image-shrink_720_1280/0/1539791541911?e=2147483647&v=beta&t=kqmfGkOJ0Z5ZvVhFZuhzPe1hEB_BClx2QtOp7MpJGAE
 
-
+https://www.letsgoshooting.org/wp-content/uploads/2020/09/RifleStandingPosition.png
 
