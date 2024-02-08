@@ -108,7 +108,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* Media query for smaller screens (1350px or less) */
+/* Media query for smaller screens (900px or less) */
 @media screen and (max-width: 900px) {
   .questionoptions {
     flex-direction: column; /* Change to column layout */
