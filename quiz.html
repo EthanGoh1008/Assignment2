@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Air Rifle Safety Quiz</title>
     <link rel="stylesheet" href="css/quiz.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -15,6 +16,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </head>
 
   <body>
@@ -123,6 +128,7 @@
             />
             <p class="quiz-caption">Rules Quiz</p>
           </div>
+
           <div class="overlay"></div>
         </div>
       </div>
@@ -174,19 +180,19 @@
           <!--<span>What does HTML stand for?</span>-->
         </div>
         <div class="option_list">
-          <!--<div class="option">
-            <span>Hyper Text PreProcessor</span>
-            <div class="icon tick"><i class="fas fa-check"></i></div>
-          </div>
-          <div class="option">
-            <span>Hyper Text Markup Language</span>
-            <div class="icon cross"><i class="fas fa-times"></i></div>
-          </div>
-          <div class="option">
-            <span>Hyper Text Multiple Language</span>
-          </div>
-          <div class="option">
-            <span>Hyper Tool Multi Language</span>
+          <!--<div class="option"> 
+            <span>Hyper Text PreProcessor</span> 
+            <div class="icon tick"><i class="fas fa-check"></i></div> 
+          </div> 
+          <div class="option"> 
+            <span>Hyper Text Markup Language</span> 
+            <div class="icon cross"><i class="fas fa-times"></i></div> 
+          </div> 
+          <div class="option"> 
+            <span>Hyper Text Multiple Language</span> 
+          </div> 
+          <div class="option"> 
+            <span>Hyper Tool Multi Language</span> 
           </div>-->
         </div>
       </section>
@@ -194,11 +200,11 @@
       <!--Quiz Box Footer-->
       <footer>
         <div class="total_que">
-          <!--<span
-            ><p>2</p>
-            Of
-            <p>5</p>
-            Questions</span
+          <!--<span 
+            ><p>2</p> 
+            Of 
+            <p>5</p> 
+            Questions</span 
           > -->
         </div>
         <button class="next_btn">Next Que</button>
@@ -218,6 +224,11 @@
         <button class="restart">Replay Quiz</button>
         <button class="quit">Quit Quiz</button>
       </div>
+    </div>
+    <div id="loading">
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+      <dotlottie-player src="https://lottie.host/f24ad8b0-c000-460d-b04a-e284e65296c3/u1wkjftenH.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
     </div>
     <section class="footer">
       <h4>About Us</h4>
