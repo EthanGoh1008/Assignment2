@@ -15,6 +15,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </head>
 
   <body>
@@ -218,6 +222,16 @@
         <button class="restart">Replay Quiz</button>
         <button class="quit">Quit Quiz</button>
       </div>
+    </div>
+    <div id="loading">
+      <dotlottie-player
+        src="https://lottie.host/99035271-28f5-458c-82db-d742665a1ac0/xQoCRa0MQh.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        autoplay
+        loop
+      ></dotlottie-player>
     </div>
     <section class="footer">
       <h4>About Us</h4>

@@ -36,8 +36,6 @@ function showStartButton(clickedImage) {
     quizHeaderSection.style.display = "none";
   }
 
-  startBtnDiv.style.display = "block";
-
   // Hide all images and captions
   images.forEach(function (image) {
     image.style.display = "none";
@@ -46,6 +44,8 @@ function showStartButton(clickedImage) {
   captions.forEach(function (caption) {
     caption.style.display = "none";
   });
+
+  startBtnDiv.style.display = "block";
 
   // Log the question that was clicked
   var clickedQuestion = clickedImage.getAttribute("alt");
@@ -109,8 +109,22 @@ restart_quiz.onclick = () => {
 };
 
 quit_quiz.onclick = () => {
-  redirectToLeaderboard();
+  showLoading(); // Call the function to show loading
+  setTimeout(() => {
+    redirectToLeaderboard();
+    hideLoading(); // Call the function to hide loading after 3 seconds
+  }, 3000); // 3000 milliseconds = 3 seconds
 };
+
+function showLoading() {
+  const loading = document.getElementById("loading");
+  loading.style.display = "block";
+}
+
+function hideLoading() {
+  const loading = document.getElementById("loading");
+  loading.style.display = "none";
+}
 
 // Function to redirect to the leaderboard page
 function redirectToLeaderboard() {
