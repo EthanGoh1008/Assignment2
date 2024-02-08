@@ -56,7 +56,7 @@
 
 .hero-btn:hover {
   border: 1px solid #6eaa6b;
-  background: #6eaa6b;
+  background: lightblue;
   transition: 1%;
 }
 
@@ -126,13 +126,14 @@ h3 {
 }
 
 .range-col {
-  flex-basis: 32%;
+  display: flex;
+  flex-basis: 102%;
   margin-bottom: 30px;
-  margin-left: 580px;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  place-items: center;
 }
 
 .range-col img {
@@ -140,7 +141,8 @@ h3 {
   max-width: none; /* Remove max-width constraint */
   height: auto; /* Maintain the image's aspect ratio */
   margin: 0 auto; /* Center the image horizontally */
-  width: 100%; /* Make the image 100% of its container's width */
+  width: 120%; /* Make the image 100% of its container's width */
+  align-items: center;
 }
 
 /* Notes */
@@ -178,7 +180,6 @@ h3 {
   gap: 20px; /* Add equal space between text and image */
 }
 
-
 .notes-col {
   flex-basis: 44%;
   border-radius: 10px;
@@ -198,7 +199,6 @@ h3 {
 .notes-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
-
 
 /* cta */
 .foot {
@@ -238,7 +238,6 @@ h3 {
   cursor: pointer;
   padding: 18px 0;
 }
-
 
 /* Equipment */
 
@@ -337,31 +336,31 @@ h3 {
   right: 10px;
 }
 
-/*LeaderBoard*/ 
-#leaderboard-container { 
-  max-width: 600px; 
-  margin: 20px auto; 
-} 
- 
-.table { 
-  width: 100%; 
-  border-collapse: collapse; 
-  margin-top: 20px; 
-} 
- 
-.th, 
-td { 
-  padding: 10px; 
-  text-align: left; 
-  border: 1px solid #ddd; 
-} 
- 
-.th { 
-  background-color: #f2f2f2; 
-} 
- 
-.tr:hover { 
-  background-color: #f5f5f5; 
+/*LeaderBoard*/
+#leaderboard-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.th {
+  background-color: #f2f2f2;
+}
+
+.tr:hover {
+  background-color: #f5f5f5;
 }
 
 /* product */
@@ -414,7 +413,5 @@ td {
 #prodetails .single-pro-details span {
   line-height: 25px;
 }
-
-
 
 /* End */
