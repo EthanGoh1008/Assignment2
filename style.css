@@ -57,7 +57,6 @@
 .hero-btn:hover {
   border: 1px solid #6eaa6b;
   background: lightblue;
-  transition: 1%;
 }
 
 @media (max-width: 700px) {
@@ -257,7 +256,6 @@ h3 {
   border: 1px solid seashell;
   border-radius: 10px;
   margin: 15px;
-  transition: 0.2 ease;
 }
 
 #feature .fe-box:hover {
@@ -282,7 +280,6 @@ h3 {
   border-radius: 20px;
   cursor: pointer;
   margin: 10px;
-  transition: 0.2 ease;
   text-align: left;
   position: relative;
   width: calc(
