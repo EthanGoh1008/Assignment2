@@ -6,6 +6,19 @@
   font-family: "Poppins", sans-serif;
 }
 
+#loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  display: none;
+}
+
 body {
   background: #007bff;
   height: 10vh;
